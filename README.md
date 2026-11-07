@@ -1,6 +1,4 @@
-# Cartman Stickers — Pose App
-
-HAMPTER-style webcam meme app: **MediaPipe** hand classification + **OpenCV** split view, with Cartman stickers instead of the hamster.
+# cartman stickers 
 
 ```
 ┌─────────────────────┬─────────────────────┐
@@ -9,7 +7,7 @@ HAMPTER-style webcam meme app: **MediaPipe** hand classification + **OpenCV** sp
 └─────────────────────┴─────────────────────┘
 ```
 
-## Stickers
+## stickers
 
 | Class | Gesture (all conditions required) | Asset | Meme |
 |------:|-----------------------------------|-------|------|
@@ -20,7 +18,7 @@ HAMPTER-style webcam meme app: **MediaPipe** hand classification + **OpenCV** sp
 | 4 | Arms crossed on chest | `assets/4.jpg` | Crossed-arms Cartman |
 | 5 | Two index fingers up beside face | `assets/5.png` | Pointer-fingers Cartman |
 
-## Setup
+## setup
 
 ```bash
 cd cartmanstickers
@@ -31,7 +29,7 @@ pip install -r requirements.txt
 
 macOS: allow camera access for Terminal/Python in **System Settings → Privacy & Security → Camera**.
 
-## Run (works immediately with rule gestures)
+## run (works immediately with rule gestures)
 
 ```bash
 python app.py
@@ -39,27 +37,27 @@ python app.py
 
 Press `q` to quit.
 
-## Optional: train your own poses (HAMPTER pipeline)
+## optional: train your own poses 
 
-1. Collect samples — hold `0`, `1`, or `2` while posing; `space` to stop recording; `q` to quit:
+1. collect samples — hold `0`, `1`, or `2` while posing; `space` to stop recording; `q` to quit:
 
 ```bash
 python collect.py
 ```
 
-2. Train the classifier:
+2. train the classifier:
 
 ```bash
 python train.py
 ```
 
-3. Run the app again — it loads `models/gesture_model.pkl` automatically:
+3. run the app again — it loads `models/gesture_model.pkl` automatically:
 
 ```bash
 python app.py
 ```
 
-## Project layout
+## project layout
 
 ```
 cartmanstickers/
